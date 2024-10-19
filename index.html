@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Definición del conjunto de caracteres y configuración de la vista para dispositivos móviles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Preconexión a las fuentes de Google para optimizar la carga -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Importación de fuentes de Google: Chakra Petch e Inter para los textos -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Enlace al archivo de estilos CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Título de la página -->
+    <title>JS Game</title>
+</head>
+
+<body>
+    <!-- Contenedor principal de la aplicación -->
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <!-- Título principal del juego -->
+                    <h1></h1>
+                    <!-- Párrafo que mostrará mensajes dinámicos del juego -->
+                    <p class="texto__parrafo"></p>
+                </div>
+                <!-- Entrada para que el usuario introduzca un número -->
+                <input type="number" id="valorUsuario" min="1" max="10" class="container__input">
+                
+                <!-- Botones para intentar adivinar o reiniciar el juego -->
+                <div class="chute container__botones">
+                    <button onclick="verificarIntento();" class="container__boton">Intentar</button>
+                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled>Nuevo juego</button>
+                </div>
+            </div>
+            <!-- Imagen decorativa de la aplicación -->
+            <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
+        </div>
+    </div>
+
+    <!-- Inclusión del script de JavaScript para la lógica del juego -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>

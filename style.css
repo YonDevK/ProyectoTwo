@@ -1,0 +1,126 @@
+/* Estilos CSS para el diseño de la aplicación */
+
+/* Reset de márgenes y paddings para todos los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Estilo general del body */
+body {
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fondo con imagen para el body */
+body::before {
+    background-image: url("img/code.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+/* Contenedor principal */
+.container {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    border: 1px solid #1875E8;
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+    background-image: url("img/Ruido.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/* Estilo del contenido interno del contenedor */
+.container__contenido {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Contenedor de información */
+.container__informaciones {
+    flex: 1;
+    padding: 3rem;
+}
+
+/* Estilo para los botones */
+.container__boton {
+    border-radius: 16px;
+    background: #1875E8;
+    padding: 16px 24px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    margin-top: 2rem;
+}
+
+/* Estilo para los botones deshabilitados */
+.container__boton:disabled {
+    background: #898989;
+}
+
+/* Estilos para el contenedor de texto */
+.container__texto {
+    margin: 16px 0 16px 0;
+}
+
+/* Estilo específico para el texto azul */
+.container__texto-azul {
+    color: #1875E8;
+}
+
+/* Estilo para el input de número */
+.container__input {
+    width: 100%;
+    height: 72px;
+    border-radius: 16px;
+    background-color: #FFF;
+    border: none;
+    color: #1875E8;
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Contenedor de los botones */
+.container__botones {
+    display: flex;
+    gap: 2em;
+}
+
+/* Estilo para los encabezados */
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 72px;
+    padding-bottom: 3rem;
+}
+
+/* Estilo para párrafos y botones */
+p,
+button {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilo para los párrafos del texto */
+.texto__parrafo {
+    font-size: 32px;
+    font-weight: 400;
+}
